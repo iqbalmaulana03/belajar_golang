@@ -1,26 +1,30 @@
 package main
 
 import (
-	"fmt"
-	"project-golang/anonymous"
-	"strings"
+	"project-golang/routines"
 )
 
 func main() {
+	// penggunaan variabel
+
 	// variabel.VariabelType()
 	// variabel.VariabelNotType()
 	// variabel.MultipleVariabel()
 
+	// penggunaan type data
 	// typedata.Numerik()
 	// typedata.Boolean()
 	// typedata.String()
 
+	//penggunaan constanta
 	// constanta.Const()
 
+	//penggunaan operatort matematika
 	// operator.Aritmatik()
 	// operator.Perbandinga()
 	// operator.Logic()
 
+	//penggunaan selection
 	// selection.Selection()
 	// selection.Temporary()
 	// selection.Switch()
@@ -28,6 +32,7 @@ func main() {
 	// selection.Fallthrough()
 	// selection.Bersarang()
 
+	//penggunaan perulangan
 	// perulangan.For()
 	// perulangan.ForCondition()
 	// perulangan.ForNotCondition()
@@ -36,6 +41,7 @@ func main() {
 	// perulangan.PerulanganBersarang()
 	// perulangan.PerulanganLabel()
 
+	//penggunaan array
 	// arrays.Array()
 	// arrays.InisialisasiArray()
 	// arrays.NoInisialisasiArray()
@@ -45,6 +51,7 @@ func main() {
 	// arrays.PerulanganNotUndescore()
 	// arrays.MakeArray()
 
+	//penggunaan slice
 	// slices.InisialisasiSlice()
 	// slices.ArraySlice()
 	// slices.TypeReferences()
@@ -54,6 +61,7 @@ func main() {
 	// slices.Copy()
 	// slices.SLice3Indexs()
 
+	//penggunaan map
 	// maps.Maps()
 	// maps.NilaiMaps()
 	// maps.ForMaps()
@@ -61,39 +69,89 @@ func main() {
 	// maps.DeteksiMaps()
 	// maps.SliceMaps()
 
+	//penggunaan multiple return
 	// var diameter float64 = 15
-
 	// var area, circumference = multipelreturn.Calculate(diameter)
-
 	// fmt.Printf("luas lingkaran\t\t: %.2f \n", area)
 	// fmt.Printf("keliling lingkaran\t: %.2f \n", circumference)
 
-	anonymous.MinMax()
-	anonymous.Iife()
+	// penggunaan anonymous function
+	// anonymous.MinMax()
+	// anonymous.Iife()
+	// var max = 3
+	// var numbers = []int{2, 3, 0, 4, 3, 2, 0, 4, 2, 0, 3}
+	// var howMany, getNumbers = anonymous.FindMax(numbers, max)
+	// var theNumbers = getNumbers()
+	// fmt.Println("numbers \t:", numbers)
+	// fmt.Printf("find \t: %d\n\n", max)
+	// fmt.Println("found \t:", howMany)
+	// fmt.Println("value \t\n:", theNumbers)
+	// var data = []string{"wick", "jason", "ethan"}
+	// var dataContainsO = anonymous.Filter(data, func(each string) bool {
+	// 	return strings.Contains(each, "o")
+	// })
+	// var dataLength5 = anonymous.Filter(data, func(each string) bool {
+	// 	return len(each) == 5
+	// })
+	// fmt.Println("data asli \t\t:", data)
+	// fmt.Println("filter ada huruf \"o\"\t:", dataContainsO)
+	// fmt.Println("filter jumlah huruf \"5\"\t:", dataLength5)
 
-	var max = 3
-	var numbers = []int{2, 3, 0, 4, 3, 2, 0, 4, 2, 0, 3}
+	//penggunaan pointer
+	// pointer.Pointer()
+	// pointer.PerubahanPointer()
+	// pointer.ParameterPointer()
 
-	var howMany, getNumbers = anonymous.FindMax(numbers, max)
-	var theNumbers = getNumbers()
+	// penggunaan struct
+	// structs.Student()
+	// structs.ObjectPointer()
+	// structs.EmbededStuct()
+	// structs.SubStruct()
+	// structs.AnonymousStruct()
+	// structs.SliceAndStruct()
+	// structs.AnonymousStructAndSlice()
 
-	fmt.Println("numbers \t:", numbers)
-	fmt.Printf("find \t: %d\n\n", max)
+	// penggunaan method
+	// method.Methods()
+	// method.MethodPointer()
 
-	fmt.Println("found \t:", howMany)
-	fmt.Println("value \t\n:", theNumbers)
+	// penggunaan private or public dari sebuah method atau function
+	// f.Printf("Name  : %s\n", library.Student.Name)
+	// f.Printf("Grade : %d\n", library.Student.Grade)
+	// sayHello("Iqbal")
 
-	var data = []string{"wick", "jason", "ethan"}
-	var dataContainsO = anonymous.Filter(data, func(each string) bool {
-		return strings.Contains(each, "o")
-	})
+	// penggunaan interface
+	// var bangunDatar interfaces.Hitung
+	// bangunDatar = interfaces.Persegi{10.0}
+	// fmt.Println("==== persegi")
+	// fmt.Println("luas	:", bangunDatar.Luas())
+	// fmt.Println("keliling :", bangunDatar.Keliling())
+	// bangunDatar = interfaces.Lingkaran{14.0}
+	// var bangunLingkaran interfaces.Lingkaran = bangunDatar.(interfaces.Lingkaran)
+	// fmt.Println("==== lingkaran")
+	// fmt.Println("luas	:", bangunDatar.Luas())
+	// fmt.Println("keliling :", bangunDatar.Keliling())
+	// fmt.Println("jari-jari :", bangunLingkaran.JariJari())
+	// var bangunRuang = &interfaces.Kubus{4}
+	// fmt.Println("==== kubus")
+	// fmt.Println("luas	:", bangunRuang.Luas())
+	// fmt.Println("keliling :", bangunRuang.Keliling())
+	// fmt.Println("volume	:", bangunRuang.Volume())
 
-	var dataLength5 = anonymous.Filter(data, func(each string) bool {
-		return len(each) == 5
-	})
+	// penggunaan any interface
+	// anys()
+	// data()
+	// Alias()
+	// assertions()
+	// casting()
+	// kombinasi()
 
-	fmt.Println("data asli \t\t:", data)
+	// penggunaa reflection
+	// reflection.Reflection()
+	// reflection.ReflectionInterface()
+	// reflection.ReflectionProperty()
+	// reflection.AksesMethod()
 
-	fmt.Println("filter ada huruf \"o\"\t:", dataContainsO)
-	fmt.Println("filter jumlah huruf \"5\"\t:", dataLength5)
+	// penggunaan go routine
+	routines.Rountines()
 }
