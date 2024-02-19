@@ -1,7 +1,7 @@
 package main
 
 import (
-	"project-golang/routines"
+	channeltimeout "project-golang/channelTimeOut"
 )
 
 func main() {
@@ -153,5 +153,21 @@ func main() {
 	// reflection.AksesMethod()
 
 	// penggunaan go routine
-	routines.Rountines()
+	// routines.Rountines()
+
+	// penggunaan channel
+	// channels.Channel()
+	// channels.ChannelParameter()
+
+	// penggunaan buffered channel
+	// buferedchannel.BuffredCahnnel()
+
+	// penggunaan select
+	// selects.Selects()
+
+	// penggunaan range close
+	// rangeclose.RangeClose()
+
+	// penggunaan channel time out
+	channeltimeout.TimeOut()
 }
