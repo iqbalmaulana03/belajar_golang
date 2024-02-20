@@ -1,7 +1,7 @@
 package main
 
 import (
-	channeltimeout "project-golang/channelTimeOut"
+	"project-golang/times"
 )
 
 func main() {
@@ -169,5 +169,34 @@ func main() {
 	// rangeclose.RangeClose()
 
 	// penggunaan channel time out
-	channeltimeout.TimeOut()
+	// channeltimeout.TimeOut()
+
+	// penggunaan defer
+	// defers.OrderSomeFood("pizza")
+	// defers.OrderSomeFood("burger")
+	// defers.AnonymousDefere()
+	// defers.Exits()
+
+	// penggunaan error, panic, recover
+	// errorspanics.Errors()
+	// errorspanics.CustomerError()
+	// errorspanics.Panics()
+	// errorspanics.Recovers()
+	// errorspanics.RecobersAnonymous()
+
+	// penggunaan layout format string
+	// layoutformat.LayOut()
+
+	// penggunaan random math
+	// randoms.Generate()
+	// randoms.UnixNano()
+	// randoms.RandomDataNumerik()
+	// randoms.RandomsString()
+
+	// cara penggunaan time
+	times.Times()
+	times.ParsingTime()
+	times.PredenfinedTime()
+	times.TimeToString()
+	times.HandleErrorTime()
 }
