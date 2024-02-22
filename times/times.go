@@ -2,6 +2,7 @@ package times
 
 import (
 	"fmt"
+	"os"
 	"time"
 )
 
@@ -54,4 +55,115 @@ func HandleErrorTime() {
 	}
 
 	fmt.Println(date)
+}
+
+func TimesSlepp() {
+	fmt.Println("start")
+	time.Sleep(time.Second * 4)
+	fmt.Println("after 4 seconds")
+}
+
+func ScedhulerSleep() {
+	for true {
+		fmt.Println("Hallo")
+		time.Sleep(time.Second * 1)
+	}
+}
+
+func NewTimers() {
+	var timer = time.NewTimer(4 * time.Second)
+
+	fmt.Println("start")
+	<-timer.C
+	fmt.Println("finish")
+}
+
+func AftersTime() {
+	var ch = make(chan bool)
+
+	time.AfterFunc(4*time.Second, func() {
+		fmt.Println("expired")
+		ch <- true
+	})
+
+	fmt.Println("start")
+	<-time.After(4 * time.Second)
+	fmt.Println("expired")
+	fmt.Println("finish")
+}
+
+func SchedulerTicker() {
+	done := make(chan bool)
+
+	ticker := time.NewTicker(time.Second)
+
+	go func() {
+		time.Sleep(10 * time.Second)
+		done <- true
+	}()
+
+	for {
+		select {
+		case <-done:
+			ticker.Stop()
+			return
+		case t := <-ticker.C:
+			fmt.Println("Hello !!", t)
+		}
+	}
+}
+
+func timer(timeout int, ch chan<- bool) {
+	time.AfterFunc(time.Duration(timeout)*time.Second, func() {
+		ch <- true
+	})
+}
+
+func watcher(timeout int, ch <-chan bool) {
+	<-ch
+	fmt.Println("\ntimer out! no answer more than", timeout, "seconds")
+	os.Exit(0)
+}
+
+func TimerGoruotine() {
+	var timeout = 5
+	var ch = make(chan bool)
+
+	go timer(timeout, ch)
+	go watcher(timeout, ch)
+
+	var input string
+	fmt.Print("what is 725/25 ? ")
+	fmt.Scan(&input)
+
+	if input == "29" {
+		fmt.Println("the anser is right!!")
+	} else {
+		fmt.Println("th answer wrong!")
+	}
+}
+
+func Duration() {
+	start := time.Now()
+
+	time.Sleep(5 * time.Second)
+
+	duration := time.Since(start)
+
+	fmt.Println("time elapsed in seconds:", duration.Seconds())
+	fmt.Println("time elapsed in minutes:", duration.Minutes())
+	fmt.Println("time elapsed in hours:", duration.Hours())
+}
+
+func KalkulasiSelisih() {
+	t1 := time.Now()
+
+	time.Sleep(5 * time.Second)
+	t2 := time.Now()
+
+	duration := t1.Sub(t2)
+
+	fmt.Println("time elapsed in seconds:", duration.Seconds())
+	fmt.Println("time elapsed in minutes:", duration.Minutes())
+	fmt.Println("time elapsed in hours:", duration.Hours())
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"project-golang/times"
+	"project-golang/regexs"
 )
 
 func main() {
@@ -194,9 +194,54 @@ func main() {
 	// randoms.RandomsString()
 
 	// cara penggunaan time
-	times.Times()
-	times.ParsingTime()
-	times.PredenfinedTime()
-	times.TimeToString()
-	times.HandleErrorTime()
+	// times.Times()
+	// times.ParsingTime()
+	// times.PredenfinedTime()
+	// times.TimeToString()
+	// times.HandleErrorTime()
+	// times.TimesSlepp()
+	// times.ScedhulerSleep()
+	// times.NewTimers()
+	// times.AftersTime()
+	// times.SchedulerTicker()
+	// times.TimerGoruotine()
+	// times.Duration()
+	// times.KalkulasiSelisih()
+
+	// penggunaan konversi tipe data
+	// konvertiondata.Atoi()
+	// konvertiondata.Itoa()
+	// konvertiondata.ParsingInt()
+	// konvertiondata.ParsingFloat()
+	// konvertiondata.ParsingBool()
+	// konvertiondata.ParsingBiner()
+	// konvertiondata.FormatingFloat()
+	// konvertiondata.FormatingBool()
+	// konvertiondata.FormatInt()
+	// konvertiondata.Casting()
+	// konvertiondata.CastingString()
+	// konvertiondata.AssertionInterface()
+
+	// penggunaan package strings
+	// fungsistrings.Contains()
+	// fungsistrings.Count()
+	// fungsistrings.HashingPrefix()
+	// fungsistrings.HashingSuffix()
+	// fungsistrings.Indexing()
+	// fungsistrings.Joins()
+	// fungsistrings.Lower()
+	// fungsistrings.Repeats()
+	// fungsistrings.Replacing()
+	// fungsistrings.Splits()
+	// fungsistrings.Upper()
+
+	// penggunaan regex
+	regexs.FindingAllStrings()
+	regexs.FindingString()
+	regexs.FindingStringIndexs()
+	regexs.MatchingString()
+	regexs.Regexs()
+	regexs.ReplacingAllStrings()
+	regexs.RepleacingAllString()
+	regexs.Splits()
 }
