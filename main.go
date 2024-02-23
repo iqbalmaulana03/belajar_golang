@@ -1,7 +1,7 @@
 package main
 
 import (
-	"project-golang/regexs"
+	"project-golang/files"
 )
 
 func main() {
@@ -236,12 +236,34 @@ func main() {
 	// fungsistrings.Upper()
 
 	// penggunaan regex
-	regexs.FindingAllStrings()
-	regexs.FindingString()
-	regexs.FindingStringIndexs()
-	regexs.MatchingString()
-	regexs.Regexs()
-	regexs.ReplacingAllStrings()
-	regexs.RepleacingAllString()
-	regexs.Splits()
+	// regexs.FindingAllStrings()
+	// regexs.FindingString()
+	// regexs.FindingStringIndexs()
+	// regexs.MatchingString()
+	// regexs.Regexs()
+	// regexs.ReplacingAllStrings()
+	// regexs.RepleacingAllString()
+	// regexs.Splits()
+
+	// penggunaan encode dan decode
+	// encodedicode.EncodeToString()
+	// encodedicode.Encode()
+	// encodedicode.EncodeDataURL()
+
+	// penggunaan sha
+	// encodedicode.SaltingSHA()
+
+	// penggunaan arguments dan flag
+	// argumensflags.Arguments()
+	// argumensflags.Flags()
+
+	// penggunaan exec
+	// execs.Execs()
+	// execs.BetterExec()
+
+	// penggunaan file
+	files.CreateFile()
+	files.WriteFile()
+	files.ReadFile()
+	files.DeleteFile()
 }
