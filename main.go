@@ -1,7 +1,7 @@
 package main
 
 import (
-	"project-golang/files"
+	"project-golang/mutexs"
 )
 
 func main() {
@@ -262,8 +262,40 @@ func main() {
 	// execs.BetterExec()
 
 	// penggunaan file
-	files.CreateFile()
-	files.WriteFile()
-	files.ReadFile()
-	files.DeleteFile()
+	// files.CreateFile()
+	// files.WriteFile()
+	// files.ReadFile()
+	// files.DeleteFile()
+
+	// penggunaan http
+	// servers.Servers()
+	// servers.TemplateWeb()
+
+	// penggunaan url parsing
+	// servers.UrlParsing()
+
+	// penggunaan json
+	// jsons.DecodeJson()
+	// jsons.DecodeMapJson()
+	// jsons.DecodeArrayJson()
+	// jsons.EncodingJson()
+
+	// penggunaan Web ApI
+	// http.HandleFunc("/users", users)
+	// http.HandleFunc("/user", user)
+
+	// fmt.Println("starting web server at http://localhost:8080/")
+	// http.ListenAndServe(":8080", nil)
+
+	// penggunaan database mysql
+	// mysqls.SqlQuery()
+	// mysqls.QueryRow()
+	// mysqls.SqlPrepare()
+	// mysqls.SqlExec()
+
+	// penggunaan wait group
+	// waitgroups.WaitGroups()
+
+	mutexs.RaceCondition()
+	mutexs.Mutexs()
 }
