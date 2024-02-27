@@ -1,8 +1,6 @@
 package main
 
-import (
-	"project-golang/mutexs"
-)
+import "project-golang/generics"
 
 func main() {
 	// penggunaan variabel
@@ -296,6 +294,15 @@ func main() {
 	// penggunaan wait group
 	// waitgroups.WaitGroups()
 
-	mutexs.RaceCondition()
-	mutexs.Mutexs()
+	// penggunaan mutexs
+	// mutexs.RaceCondition()
+	// mutexs.Mutexs()
+
+	// penggunaan vendor
+	// fmt.Println(gubrak.RandomInt(10, 20))
+
+	// penggunaan generic
+	generics.Generics()
+	generics.Keywoard()
+	generics.GenericsTypes()
 }
